@@ -1,0 +1,13 @@
+-step1-
+run mjpg_streamer
+with:  ./mjpg_streamer -i "./input_uvc.so" -o "./output_http.so -w ./www"
+
+-step2-
+python main.py
+python control.py
+
+-step3-
+visit:192.168.1.100:8081/web
+
+-step4-
+rule the world!
